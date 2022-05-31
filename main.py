@@ -6,7 +6,7 @@ while True:
     plays = ['R', 'P', 'S']
 
     computer = random.choice(plays)
-    player = input('Enter your choice: ')
+    player = input('Enter selection: ')
 
     if player in plays:
         print(f'Player played "{player}" : CPU played "{computer}"')
@@ -29,8 +29,7 @@ while True:
             if play_again.lower() != 'y':
                 break
         else:
-            print('You lose')
-            play_again = input('Play again? (y/n): ')
+            play_again = input('You lose, wanna play again? (y/n): ')
             if play_again.lower() != 'y':
                 break
     else:
